@@ -13,6 +13,11 @@
         "class": "name",
         "inner": "%name%"
       },
+	  {
+		"tag": "div",
+		"class": "date",
+		"inner": "%date%"
+	  },
       {
         "tag": "div",
         "class": "text",
@@ -23,7 +28,7 @@
 
   "input": {
     "tag": "div",
-    "class": "new_message",
+    "class": "inputbar",
     "inner": [
       {
         "tag": "div",
@@ -36,15 +41,18 @@
           "tag": "form",
           "inner": [
             {
-              "tag": "input",
+              "tag": "textarea",
               "class": "input",
-              "placeholder": "Enter message here..."
+              "placeholder": "Kommentar..."
             },
+			{
+				"tag": "br"
+			},
             {
               "tag": "input",
               "class": "button",
               "type": "submit",
-              "value": "Send"
+              "value": "Senden"
             }
           ],
           "onsubmit": "%onsubmit%"
