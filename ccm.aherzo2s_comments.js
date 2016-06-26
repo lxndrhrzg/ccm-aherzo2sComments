@@ -1,10 +1,10 @@
 ccm.component( {
   name: 'aherzo2s_comments',
   config: {
-    html:  [ ccm.store, { local: 'templates.json' } ],
+    html:  [ ccm.store, { local: '../' + component_name + '/' + 'templates.json' } ],
     key:   'randomkey',
     store: [ ccm.store, { url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'aherzo2s_comments' } ],
-    style: [ ccm.load, 'ccm-style.css' ],  // Einbindung einer CSS-Datei
+    style: [ ccm.load, '../' + component_name + '/' + 'ccm-style.css' ],  // Einbindung einer CSS-Datei
     user:  [ ccm.instance, 'http://kaul.inf.h-brs.de/ccm/components/user2.js' ]
   },
   onsubmit: function () {
